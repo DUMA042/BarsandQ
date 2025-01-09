@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.barsandq"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.barsandq"
@@ -40,6 +40,15 @@ android {
 }
 
 dependencies {
+    implementation(libs.camera.mlkit.vision)
+    implementation(libs.mlkit.barcode.scanning)
+
+    implementation(libs.androidx.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
+
+    implementation(libs.accompanistPermissions)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
